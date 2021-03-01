@@ -1,0 +1,10 @@
+Tips for Heuristics:
+1. There are no solutions when there are either obstacles or walls in 3 adjacent tiles next to any given snowball.
+
+2. Splitting edge cases for each snowball getting stuck into separate helper functions helps the flow of the code and organization overall.
+
+3. Try to loop only have one loop per heuristic function, as each loop increases runtime quite a lot.
+
+4. Adjusting the values added to heuristics by using non integer values helps gauge how important each optimization is (reduced the importance of Manhattan distance for me).
+
+5. Find a data structure to help iterate over the obstacles creating a stuck box, as iterating through the obstacles each time it's checked costs a lot of time.
